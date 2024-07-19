@@ -1,5 +1,5 @@
+// src/pages/Home.js
 import React from 'react';
-import UserProfile from '../components/UserProfile';
 import StoryList from '../components/StoryList';
 import FeaturedStories from '../components/FeaturedStories';
 
@@ -14,6 +14,8 @@ const Home = () => {
             <a href="/" className="text-lg font-semibold text-white">Home</a>
             <a href="/browse" className="text-lg font-semibold text-white">Browse Stories</a>
             <a href="/profile" className="text-lg font-semibold text-white">Profile</a>
+            <a href="/login" className="text-lg font-semibold text-white">Login</a>
+            <a href="/signup" className="text-lg font-semibold text-white">Sign Up</a>
           </nav>
         </header>
         
@@ -37,12 +39,6 @@ const Home = () => {
             <h2 className="text-3xl font-bold mb-4 text-purple-600 py-4 px-6 bg-gradient-to-r from-blue-400 to-purple-400 rounded-t-xl">Story List</h2>
             <StoryList />
           </section>
-        </div>
-
-        {/* Join Community */}
-        <div className="max-w-xl mx-auto bg-white rounded-xl shadow-lg text-gray-900 py-8 px-6 mt-8">
-          <h2 className="text-3xl font-bold mb-4 text-purple-600">Join our community</h2>
-          <UserProfile />
         </div>
       </div>
     </div>

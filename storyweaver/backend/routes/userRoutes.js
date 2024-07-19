@@ -1,74 +1,57 @@
+// backend/routes/userRoutes.js
 const express = require('express');
 const router = express.Router();
-const User = require('../models/userModel'); // Import the User model
+const User = require('../models/UserModel');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
-// GET: Fetch all users
-router.get('/', async (req, res) => {
-  try {
-    const users = await User.find();
-    res.json(users);
-  } catch (err) {
-    res.status(500).json({ message: 'Server error while fetching users' });
-  }
-});
+router.post('/signup', async (req, res) => {
+    const { firstName, lastName, email, password } = req.body;
 
-// POST: Create a new user
-router.post('/', async (req, res) => {
-  const { name, email, password } = req.body;
-  const newUser = new User({ name, email, password });
+    try {
+        const existingUser = await User.findOne({ email });
+        if (existingUser) {
+            return res.status(400).json({ message: 'User already exists' });
+        }
 
-  try {
-    const savedUser = await newUser.save();
-    res.status(201).json(savedUser);
-  } catch (err) {
-    res.status(400).json({ message: 'Error creating user: ' + err.message });
-  }
-});
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const newUser = new User({
+            firstName,
+            lastName,
+            email,
+            password: hashedPassword,
+        });
 
-// GET: Fetch a user by ID
-router.get('/:id', async (req, res) => {
-  try {
-    const user = await User.findById(req.params.id);
-    if (!user) return res.status(404).json({ message: 'User not found' });
-    res.json(user);
-  } catch (err) {
-    res.status(500).json({ message: 'Server error while fetching user' });
-  }
-});
+        await newUser.save();
 
-// PUT: Update a user by ID
-router.put('/:id', async (req, res) => {
-  const { name, email, password } = req.body;
-
-  try {
-    const user = await User.findById(req.params.id);
-    if (!user) return res.status(404).json({ message: 'User not found' });
-
-    if (name != null) user.name = name;
-    if (email != null) user.email = email;
-    if (password != null) {
-      user.password = password; // This will trigger the pre-save hook to hash the password
+        res.status(201).json({ data: { email: newUser.email } });
+    } catch (error) {
+        console.error('Error during signup:', error);
+        res.status(500).json({ message: 'Internal server error' });
     }
-
-    const updatedUser = await user.save();
-    res.json(updatedUser);
-  } catch (err) {
-    res.status(400).json({ message: 'Error updating user: ' + err.message });
-  }
 });
 
-// DELETE: Delete a user by ID
-router.delete('/:id', async (req, res) => {
-  try {
-    const user = await User.findById(req.params.id);
-    if (!user) return res.status(404).json({ message: 'User not found' });
+router.post('/login', async (req, res) => {
+    const { email, password } = req.body;
 
-    await user.remove();
-    res.json({ message: 'User deleted successfully' });
-  } catch (err) {
-    res.status(500).json({ message: 'Server error while deleting user' });
-  }
+    try {
+        const user = await User.findOne({ email });
+        if (!user) {
+            return res.status(400).json({ message: 'Invalid email or password' });
+        }
+
+        const isPasswordValid = await bcrypt.compare(password, user.password);
+        if (!isPasswordValid) {
+            return res.status(400).json({ message: 'Invalid email or password' });
+        }
+
+        const token = jwt.sign({ userId: user._id }, 'your_jwt_secret', { expiresIn: '1h' });
+
+        res.status(200).json({ data: { token } });
+    } catch (error) {
+        console.error('Error during login:', error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
 });
 
 module.exports = router;
-
