@@ -1,0 +1,3 @@
+
+
+60576dfb74fe8fb8ca4fdcecd290de66a06fb456	{"key":"make-fetch-happen:request-cache:https://registry.npmjs.org/postcss-dir-pseudo-class","integrity":"sha512-mBR62tZmX/A5nY+hvsG6cXpb6lZbpV4UcDiTfqDOF5BMh14P6kXrk7+zUGVgwnTQWwYaeW7Fa4hK89u31lgyjg==","time":1721734617236,"size":61342,"metadata":{"time":1721734616014,"url":"https://registry.npmjs.org/postcss-dir-pseudo-class","reqHeaders":{"accept":"application/json"},"resHeaders":{"cache-control":"public, max-age=300","content-encoding":"gzip","content-type":"application/json","date":"Tue, 23 Jul 2024 11:36:55 GMT","etag":"W/\"3a7545cb01c6454b79e06e1dfb81bd1c\"","last-modified":"Fri, 15 Dec 2023 23:18:11 GMT","vary":"accept-encoding, accept"},"options":{"compress":true}}}

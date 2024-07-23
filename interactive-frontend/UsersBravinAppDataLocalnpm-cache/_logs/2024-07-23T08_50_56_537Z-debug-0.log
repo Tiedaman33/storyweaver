@@ -1,0 +1,15 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.7.0
+2 info using node@v20.15.0
+3 silly config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config:load:file:c:\Users\Bravin\storyweaver\interactive-frontend\.npmrc
+5 silly config:load:file:C:\Users\Bravin\.npmrc
+6 silly config:load:file:C:\Users\Bravin\storyweaver\interactive-frontend\UsersBravinAppDataRoamingnpm\etc\npmrc
+7 verbose title npm view react-router-dom description dist-tags.latest homepage version time
+8 verbose argv "view" "--json" "--" "react-router-dom" "description" "dist-tags.latest" "homepage" "version" "time"
+9 verbose logfile logs-max:10 dir:C:\Users\Bravin\storyweaver\interactive-frontend\UsersBravinAppDataLocalnpm-cache\_logs\2024-07-23T08_50_56_537Z-
+10 verbose logfile C:\Users\Bravin\storyweaver\interactive-frontend\UsersBravinAppDataLocalnpm-cache\_logs\2024-07-23T08_50_56_537Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET 200 https://registry.npmjs.org/react-router-dom 6091ms (cache miss)
+13 verbose exit 0
+14 info ok

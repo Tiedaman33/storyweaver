@@ -1,0 +1,3 @@
+
+
+77dcd2c12892f508b16e6177f8a8e6e6c9da6ffe	{"key":"make-fetch-happen:request-cache:https://registry.npmjs.org/postcss-lab-function","integrity":"sha512-hg2UTyKqW8sYoQEMN+Syg9L1SSCtMOQLDGnRvaVtvb7LqUusbBWv/c37fKHCqCM6qABQ2cjzoR0fKuxKkSUsDQ==","time":1721734613512,"size":151103,"metadata":{"time":1721734613497,"url":"https://registry.npmjs.org/postcss-lab-function","reqHeaders":{"accept":"application/json"},"resHeaders":{"cache-control":"public, max-age=300","content-encoding":"gzip","content-type":"application/json","date":"Tue, 23 Jul 2024 11:36:53 GMT","etag":"W/\"d1e81b4bbbce68b55ca1d7c3d73b4944\"","last-modified":"Sun, 07 Jul 2024 13:43:50 GMT","vary":"accept-encoding, accept"},"options":{"compress":true}}}

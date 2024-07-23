@@ -1,0 +1,3 @@
+
+
+5dc101f81ba70bec6432ea20fa42aaf1289ccd48	{"key":"make-fetch-happen:request-cache:https://registry.npmjs.org/@csstools%2fpostcss-color-function","integrity":"sha512-zlV7CEl0+l9r7zeEUyeI5MPvrjAxezokLr6vWb51xBTGqaUdaprWkKWYosNOHDQXMn+8izoSsDfNOh50Pfh0gw==","time":1721734623660,"size":109363,"metadata":{"time":1721734623654,"url":"https://registry.npmjs.org/@csstools%2fpostcss-color-function","reqHeaders":{"accept":"application/json"},"resHeaders":{"cache-control":"public, max-age=300","content-encoding":"gzip","content-type":"application/json","date":"Tue, 23 Jul 2024 11:37:02 GMT","etag":"W/\"1f1f7b86889f3163bc3f580ebf38ca68\"","last-modified":"Sun, 07 Jul 2024 13:42:22 GMT","vary":"accept-encoding, accept"},"options":{"compress":true}}}
