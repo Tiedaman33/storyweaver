@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/storyweaver/static/css/main.eddeb455.css",
+    "main.js": "/storyweaver/static/js/main.e3a335f1.js",
+    "index.html": "/storyweaver/index.html",
+    "main.eddeb455.css.map": "/storyweaver/static/css/main.eddeb455.css.map",
+    "main.e3a335f1.js.map": "/storyweaver/static/js/main.e3a335f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eddeb455.css",
+    "static/js/main.e3a335f1.js"
+  ]
+}
