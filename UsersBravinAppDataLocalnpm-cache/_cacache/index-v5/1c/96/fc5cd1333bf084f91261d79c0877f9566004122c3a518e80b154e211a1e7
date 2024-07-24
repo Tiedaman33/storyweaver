@@ -1,3 +1,0 @@
-
-
-e7042c1fa56a77de0ea9a133b75a4ab79465b59a	{"key":"make-fetch-happen:request-cache:https://registry.npmjs.org/@csstools%2fpostcss-cascade-layers","integrity":"sha512-MfUjAEmTbUMpFF3Yy/HBY3RDXb6GJj3V3wpl8Puq5xbBPvbi3WJ6sCG5n/yl5dd1PGvPaLZ3Rwl4vvmAk5dvgQ==","time":1721734623688,"size":78056,"metadata":{"time":1721734622153,"url":"https://registry.npmjs.org/@csstools%2fpostcss-cascade-layers","reqHeaders":{"accept":"application/json"},"resHeaders":{"cache-control":"public, max-age=300","content-encoding":"gzip","content-type":"application/json","date":"Tue, 23 Jul 2024 11:37:01 GMT","etag":"W/\"6d8c32e2274b7e9561e838f7348d5e1f\"","last-modified":"Mon, 13 May 2024 21:00:48 GMT","vary":"accept-encoding, accept"},"options":{"compress":true}}}

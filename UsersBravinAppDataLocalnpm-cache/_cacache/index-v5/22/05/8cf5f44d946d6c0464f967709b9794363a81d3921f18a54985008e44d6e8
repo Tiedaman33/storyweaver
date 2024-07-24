@@ -1,3 +1,0 @@
-
-
-b5092a23078200828bf2971e01e4c4bf8099aa81	{"key":"make-fetch-happen:request-cache:https://registry.npmjs.org/postcss-custom-selectors","integrity":"sha512-lv7IMz8WOmkUzY6ZxgeIlQ+KLmwwJqKpc8QfhUufulbk+rvoKb80hrByro6z+iqpvkAO9hIMCulkn1pydW/zhg==","time":1721734617177,"size":104298,"metadata":{"time":1721734616025,"url":"https://registry.npmjs.org/postcss-custom-selectors","reqHeaders":{"accept":"application/json"},"resHeaders":{"cache-control":"public, max-age=300","content-encoding":"gzip","content-type":"application/json","date":"Tue, 23 Jul 2024 11:36:55 GMT","etag":"W/\"713f14227dcb7e7512fa3795bc29dc6a\"","last-modified":"Sat, 06 Jul 2024 09:38:22 GMT","vary":"accept-encoding, accept"},"options":{"compress":true}}}
